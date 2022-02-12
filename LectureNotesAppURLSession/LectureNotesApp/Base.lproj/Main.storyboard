@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Svn-l9-a5Z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lecture Notes App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LectureNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="STf-tX-ne9">
+                                <rect key="frame" x="0.0" y="122" width="414" height="740"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="puanHucre" id="yFb-dE-9ez" customClass="PointCellTableViewCell" customModule="LectureNotesApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yFb-dE-9ez" id="CoF-Rq-c1v">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwF-VD-xQd">
+                                                    <rect key="frame" x="45" y="11.5" width="55" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="linkColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="83" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-Cs-H7U">
+                                                    <rect key="frame" x="348" y="11.5" width="21" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuA-uo-yIG">
+                                                    <rect key="frame" x="196.5" y="11.5" width="21" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ujj-Cs-H7U" firstAttribute="centerY" secondItem="CoF-Rq-c1v" secondAttribute="centerY" id="7QV-lu-kmW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ujj-Cs-H7U" secondAttribute="trailing" constant="25" id="DoC-6j-huG"/>
+                                                <constraint firstItem="cwF-VD-xQd" firstAttribute="centerY" secondItem="CoF-Rq-c1v" secondAttribute="centerY" id="b0e-ep-poO"/>
+                                                <constraint firstItem="VuA-uo-yIG" firstAttribute="centerX" secondItem="CoF-Rq-c1v" secondAttribute="centerX" id="eNr-JL-Suj"/>
+                                                <constraint firstItem="VuA-uo-yIG" firstAttribute="centerY" secondItem="CoF-Rq-c1v" secondAttribute="centerY" id="jlA-rK-eDy"/>
+                                                <constraint firstItem="cwF-VD-xQd" firstAttribute="leading" secondItem="CoF-Rq-c1v" secondAttribute="leadingMargin" constant="25" id="nCV-kO-Dbn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="finalLabel" destination="ujj-Cs-H7U" id="3bQ-oJ-6ps"/>
+                                            <outlet property="lecturesLabel" destination="cwF-VD-xQd" id="Zt3-kQ-8Xt"/>
+                                            <outlet property="vizeLabel" destination="VuA-uo-yIG" id="Nmb-4L-K6i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="STf-tX-ne9" secondAttribute="bottom" id="Aib-MM-rTg"/>
+                            <constraint firstItem="STf-tX-ne9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QX7-id-Dgu"/>
+                            <constraint firstItem="STf-tX-ne9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fb3-EV-eEr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STf-tX-ne9" secondAttribute="trailing" id="hQe-ph-7sl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lecture Notes App" prompt="SUM: NULL" id="gcw-oC-2Tv">
+                        <barButtonItem key="rightBarButtonItem" title="ADD" id="igy-M6-zaO">
+                            <connections>
+                                <segue destination="nnx-dv-l5N" kind="show" identifier="toAddPage" id="3LW-dZ-Wa8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pointTableView" destination="STf-tX-ne9" id="nVg-nJ-Vym"/>
+                        <segue destination="y61-XR-rLu" kind="show" identifier="toPointDetail" id="AWr-al-ZD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-726.08695652173924" y="42.857142857142854"/>
+        </scene>
+        <!--Add Point-->
+        <scene sceneID="Mzp-5w-HGi">
+            <objects>
+                <viewController id="nnx-dv-l5N" customClass="PointAddViewController" customModule="LectureNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="clf-0f-ezS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lesson Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmz-Mm-4S5">
+                                <rect key="frame" x="119.5" y="184" width="175" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39.5" id="MfY-YC-aF4"/>
+                                    <constraint firstAttribute="width" constant="175" id="ViH-Tj-4yQ"/>
+                                </constraints>
+                                <color key="textColor" white="0.8275403912" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your 1st exam score" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXD-Hm-1Qq">
+                                <rect key="frame" x="86" y="320" width="242" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39.5" id="c9a-Q0-Coj"/>
+                                    <constraint firstAttribute="width" constant="242" id="nV5-qg-Wea"/>
+                                </constraints>
+                                <color key="textColor" white="0.8275403912" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your 2nd exam score" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5gq-fi-vFO">
+                                <rect key="frame" x="80.5" y="401" width="253" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="nSd-Yg-ecb"/>
+                                    <constraint firstAttribute="height" constant="39.5" id="qey-Lx-TCd"/>
+                                </constraints>
+                                <color key="textColor" white="0.8275403912" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAq-87-97N">
+                                <rect key="frame" x="140" y="566" width="134.5" height="80"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="tintColor" white="0.94284119899999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ADD">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="55"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonClick:" destination="nnx-dv-l5N" eventType="touchUpInside" id="21N-Pa-Ope"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nM5-ba-Nz7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cmz-Mm-4S5" firstAttribute="centerX" secondItem="clf-0f-ezS" secondAttribute="centerX" id="Cfd-mj-s1p"/>
+                            <constraint firstItem="bAq-87-97N" firstAttribute="top" secondItem="5gq-fi-vFO" secondAttribute="bottom" constant="125.5" id="GIw-Au-V7i"/>
+                            <constraint firstItem="5gq-fi-vFO" firstAttribute="top" secondItem="fXD-Hm-1Qq" secondAttribute="bottom" constant="41.5" id="Ppe-6H-GVj"/>
+                            <constraint firstItem="cmz-Mm-4S5" firstAttribute="top" secondItem="nM5-ba-Nz7" secondAttribute="top" constant="96" id="nll-sZ-9QV"/>
+                            <constraint firstItem="fXD-Hm-1Qq" firstAttribute="top" secondItem="cmz-Mm-4S5" secondAttribute="bottom" constant="96.5" id="nwO-J0-c2e"/>
+                            <constraint firstItem="5gq-fi-vFO" firstAttribute="centerX" secondItem="clf-0f-ezS" secondAttribute="centerX" id="rC0-as-rLW"/>
+                            <constraint firstItem="bAq-87-97N" firstAttribute="centerX" secondItem="clf-0f-ezS" secondAttribute="centerX" id="rRT-pe-ciX"/>
+                            <constraint firstItem="fXD-Hm-1Qq" firstAttribute="centerX" secondItem="clf-0f-ezS" secondAttribute="centerX" id="xSq-nD-uur"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Point" id="VHx-tI-HIn"/>
+                    <connections>
+                        <outlet property="finalTextField" destination="5gq-fi-vFO" id="Fc1-2F-mEh"/>
+                        <outlet property="lessonNameTextField" destination="cmz-Mm-4S5" id="Dfl-s4-oCj"/>
+                        <outlet property="vizeTextField" destination="fXD-Hm-1Qq" id="Bno-n8-BAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yx-Xe-9eO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="42.857142857142854"/>
+        </scene>
+        <!--Point Detail-->
+        <scene sceneID="v4g-k9-Xzv">
+            <objects>
+                <viewController id="y61-XR-rLu" customClass="PointDetailViewController" customModule="LectureNotesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNi-jj-QL3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lesson Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2HM-k7-ePF">
+                                <rect key="frame" x="119.5" y="223" width="175" height="39.5"/>
+                                <color key="textColor" white="0.8275403912" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your 1st exam score" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GYq-wI-Ttm">
+                                <rect key="frame" x="86" y="359" width="242" height="39.5"/>
+                                <color key="textColor" white="0.8275403912" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Your 2nd exam score" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-d2-w1Y">
+                                <rect key="frame" x="80.5" y="440" width="253" height="39.5"/>
+                                <color key="textColor" white="0.8275403912" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y2S-hE-Sh9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GYq-wI-Ttm" firstAttribute="top" secondItem="2HM-k7-ePF" secondAttribute="bottom" constant="96.5" id="88J-T9-9Fs"/>
+                            <constraint firstItem="GYq-wI-Ttm" firstAttribute="top" secondItem="2HM-k7-ePF" secondAttribute="bottom" constant="96.5" id="EoU-N7-hxK"/>
+                            <constraint firstItem="2HM-k7-ePF" firstAttribute="centerX" secondItem="cNi-jj-QL3" secondAttribute="centerX" id="LLl-bX-nmz"/>
+                            <constraint firstItem="sEC-d2-w1Y" firstAttribute="top" secondItem="GYq-wI-Ttm" secondAttribute="bottom" constant="41.5" id="hZu-aM-tqF"/>
+                            <constraint firstItem="sEC-d2-w1Y" firstAttribute="top" secondItem="GYq-wI-Ttm" secondAttribute="bottom" constant="41.5" id="lCP-1m-fjf"/>
+                            <constraint firstItem="2HM-k7-ePF" firstAttribute="top" secondItem="y2S-hE-Sh9" secondAttribute="top" constant="135" id="qnX-V9-cX8"/>
+                            <constraint firstItem="sEC-d2-w1Y" firstAttribute="centerX" secondItem="cNi-jj-QL3" secondAttribute="centerX" id="y0Z-XD-uKg"/>
+                            <constraint firstItem="GYq-wI-Ttm" firstAttribute="centerX" secondItem="cNi-jj-QL3" secondAttribute="centerX" id="yAi-2a-6uR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Point Detail" id="Yn5-0s-dOR">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Delete" id="8kC-rs-OGt">
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="y61-XR-rLu" id="5aj-az-53s"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Update" id="zT4-LO-Dm9">
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="y61-XR-rLu" id="Nbr-Kv-BFo"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="finalTextField" destination="sEC-d2-w1Y" id="62I-pq-a77"/>
+                        <outlet property="lessonNameTextField" destination="2HM-k7-ePF" id="ZGs-eg-ouz"/>
+                        <outlet property="vizeTextField" destination="GYq-wI-Ttm" id="aUs-hF-mxj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqq-4B-xX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-726" y="746"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1WC-jK-vzo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Svn-l9-a5Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0A8-uz-Avq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yli-TD-V7e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhh-eZ-1fp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1513" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
