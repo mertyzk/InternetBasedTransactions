@@ -39,7 +39,24 @@ class UploadViewController: UIViewController {
                 }else{
                     imageReferance.downloadURL { (url, error) in
                         let imgUrl = url?.absoluteString // URL to String
-                        print(imgUrl!)
+                        
+                        
+                        // DATABASE
+                        
+                        let firestoreDb = Firestore.firestore()
+                        var firestoreRef : DocumentReference? = nil
+                        let firestorePost = ["imageUrl": imgUrl!, "postedBy" : Auth.auth().currentUser!.email!, "postComment" : self.descriptionTextField.text!, "date": FieldValue.serverTimestamp(), "likes" : 0] as [String : Any]
+                        firestoreRef = firestoreDb.collection("Posts").addDocument(data: firestorePost, completion: { (error) in
+                            if error != nil{
+                                self.alertFunc(inputTitle: "Error", intputMessage: error?.localizedDescription ?? "error")
+                            }else{
+                                self.imageView.image = UIImage(named: "select.png")
+                                self.descriptionTextField.text = ""
+                                self.tabBarController?.selectedIndex = 0
+                            }
+                        })
+                        
+                        
                     }
                 }
             }

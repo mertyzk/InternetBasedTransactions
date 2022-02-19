@@ -18,6 +18,7 @@
 		E2CBAF9427BFE02F007387DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2CBAF9327BFE02F007387DD /* Assets.xcassets */; };
 		E2CBAF9727BFE02F007387DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2CBAF9527BFE02F007387DD /* LaunchScreen.storyboard */; };
 		E2CBAF9F27BFE184007387DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2CBAF9E27BFE184007387DD /* GoogleService-Info.plist */; };
+		E2F2D31A27C0C03200ECE4E6 /* FeedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2D31927C0C03200ECE4E6 /* FeedCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E2CBAF9627BFE02F007387DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2CBAF9827BFE02F007387DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2CBAF9E27BFE184007387DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2F2D31927C0C03200ECE4E6 /* FeedCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E2CBAF8C27BFE02F007387DD /* SceneDelegate.swift */,
 				E2CBAF8E27BFE02F007387DD /* ViewController.swift */,
 				E24DBF3827BFF1670079A291 /* FeedViewController.swift */,
+				E2F2D31927C0C03200ECE4E6 /* FeedCellTableViewCell.swift */,
 				E24DBF3A27BFF1750079A291 /* UploadViewController.swift */,
 				E24DBF3C27BFF1800079A291 /* SettingsViewController.swift */,
 				E2CBAF9027BFE02F007387DD /* Main.storyboard */,
@@ -221,6 +224,7 @@
 			files = (
 				E2CBAF8F27BFE02F007387DD /* ViewController.swift in Sources */,
 				E24DBF3B27BFF1750079A291 /* UploadViewController.swift in Sources */,
+				E2F2D31A27C0C03200ECE4E6 /* FeedCellTableViewCell.swift in Sources */,
 				E2CBAF8B27BFE02F007387DD /* AppDelegate.swift in Sources */,
 				E24DBF3927BFF1680079A291 /* FeedViewController.swift in Sources */,
 				E2CBAF8D27BFE02F007387DD /* SceneDelegate.swift in Sources */,
