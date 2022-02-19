@@ -1,0 +1,6 @@
+framework module Pods_SnapchatFirebaseClone {
+  umbrella header "Pods-SnapchatFirebaseClone-umbrella.h"
+
+  export *
+  module * { export * }
+}
